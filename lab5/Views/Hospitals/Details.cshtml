@@ -1,0 +1,12 @@
+﻿@model lab5.Models.Hospitals
+@{
+    ViewData["Title"] = "Backend5";
+}
+
+<form method="post">
+    <p><b>Name</b>     @Html.DisplayFor(model => model.name)</p>
+    <p><b>Address</b>   @Html.DisplayFor(model => model.adress)</p>
+    <p><b>Phones</b>   @Html.DisplayFor(model => model.phones)</p>
+
+    <p><a asp-action="Edit" asp-route-id="@Model.id" >Edit</a> | <a asp-action="Hospital">Back to list</a></p>
+</form>

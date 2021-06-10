@@ -1,0 +1,19 @@
+﻿@model lab5.Models.Hospitals
+@{
+    ViewData["Title"] = "Backend5";
+}
+
+<form method="post">
+    <p>Name</p>
+    <p><input asp-for="name" /></p>
+    <span asp-validation-for="name" class="text-danger"></span>
+    <p>Address</p>
+    <p><input asp-for="adress" /></p>
+    <span asp-validation-for="adress" class="text-danger"></span>
+    <p>Phones</p>
+    <p><input asp-for="phones" /></p>
+    <span asp-validation-for="phones" class="text-danger"></span>
+
+    <p><button type="submit">Save</button></p>
+    <p><a asp-action="Hospital">Back to list</a></p>
+</form>

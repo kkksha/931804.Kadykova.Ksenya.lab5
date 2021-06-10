@@ -1,0 +1,16 @@
+﻿@model lab5.Models.Doctors
+@{
+    ViewData["Title"] = "Backend5";
+}
+
+<form method="post">
+    <p>Name</p>
+    <p><input name="name" type="text" /></p>
+    <span asp-validation-for="name" class="text-danger"></span>
+    <p>Speciality</p>
+    <p><input name="speciality" type="text" /></p>
+    <span asp-validation-for="speciality" class="text-danger"></span>
+
+    <p><button type="submit">Create</button></p>
+    <p><a asp-action="Doctor">Back to list</a></p>
+</form>
